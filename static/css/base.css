@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background: url('./media/homepage_background_cropped.jpg') no-repeat center center fixed;
+    background: url('/media/homepage_background_cropped.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
@@ -41,6 +41,7 @@ body {
 .btn-outline-black {
     background: white;
     color: black !important;
+   
     /* use important to override link colors for <a> elements */
     border: 1px solid black;
 }
@@ -74,13 +75,13 @@ body {
     background: #000 !important;
 }
 
-.overlay {
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    position: fixed;
-    background: white;
+    overlay {
+       height: 100%;
+       width: 100%;
+       top: 0;
+       left: 0;
+       position: fixed;
+       background: white;
     z-index: -1;
 }
 
@@ -178,16 +179,18 @@ input[name='q']::placeholder {
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
-@media (min-width: 1200px) {
-    .container {
-        max-width: 80%;
+  @media (min-width: 1200px) {
+        .container {
+          max-width: 80%;
     }
 }
 
 /* Allauth form formatting */
 
-.allauth-form-inner-content p {
-    margin-top: 1.5rem;
+.allauth-form-inner-con
+t   ent p {
+    margin-top: 1.5
+r   em;
     /* mt-4 */
     color: #6c757d;
     /* text-secondary */
@@ -205,8 +208,8 @@ input[name='q']::placeholder {
 .allauth-form-inner-content input::placeholder {
     color: #aab7c4;
 }
-
-.allauth-form-inner-content button,
+    
+    allauth-form-inner-content button,
 .allauth-form-inner-content input[type='submit'] {
     /* btn */
     display: inline-block;
@@ -223,18 +226,19 @@ input[name='q']::placeholder {
     padding: .375rem .75rem;
     font-size: 1rem;
     line-height: 1.5;
-    border-radius: 0;
+    border-radius: 0;   
 
     /* standard bootstrap btn transitions */
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
-
+    
 .allauth-form-inner-content button:hover,
 .allauth-form-inner-content input[type='submit']:hover {
     color: #fff;
     background-color: #222;
     border-color: #222;
-}
+    
+   
 
 .allauth-form-inner-content a {
     color: #17a2b8;
@@ -293,5 +297,43 @@ input[name='q']::placeholder {
 
     body {
         height: calc(100vh - 116px);
+    }
+
+    .display-4.logo-font.text-black {
+        font-size: 2rem;
+    }
+
+    .nav-link {
+        padding: 0.15rem;
+    }
+
+    .nav-link i.fa-lg {
+        font-size: 1rem;
+    }
+
+    .navbar-toggler {
+        padding: .6rem .6rem;
+        font-size: 1rem;
+    }
+
+    #delivery-banner h4 {
+        font-size: .9rem;
+    }
+
+    .btn.btn-outline-black.rounded-0,
+    .btn.btn-black.rounded-0 {
+        padding: .375rem .375rem;
+    }
+
+    .btn.btn-outline-black.rounded-0.btn-lg,
+    .btn.btn-black.rounded-0.btn-lg {
+        padding: .3
+   75rem .375rem;
+        font-size: .75rem;
+    }
+
+    .increment-qty,
+    .decrement-qty {
+        padding: .25rem .5rem !important;
     }
 }
